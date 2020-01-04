@@ -1,0 +1,41 @@
+{
+	"name": "proton-hot-cli",
+	"author": "Grewer",
+	"description": "proton-hot-cli fork and add ts sup",
+	"license": "MIT",
+	"version": "0.0.1",
+	"main": "cli.js",
+	"scripts": {
+		"start": "cd example && cross-env TEST_CLI=true ../cli.js src/index.js",
+		"lint": "prettier --use-tabs --tab-width=4 --write *.js"
+	},
+	"bin": {
+		"proton-hot-cli": "./cli.js"
+	},
+	"dependencies": {
+		"@mischnic/babel-plugin-proton-hot": "^1.0.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"commander": "^2.16.0",
+		"find-babel-config": "^1.1.0",
+		"json5": "^1.0.1",
+		"node-hot-loader": "1.10.1",
+		"ts-loader": "^6.2.1",
+		"webpack": "^4.6.0",
+		"webpack-node-externals": "^1.7.2",
+		"react-proxy": "^1.1.8"
+	},
+	"devDependencies": {
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"cross-env": "^5.2.0",
+		"prettier": "^1.13.7",
+		"proton-native": "^1.1.8",
+		"react": "^16.4.1"
+	},
+	"files": [
+		"cli.js",
+		"node-hot-loader-patch.js",
+		"webpack.config.js"
+	]
+}
