@@ -1,6 +1,18 @@
-# proton-hot-cli
+# proton-hot-cli2
 
 ### fork [proton-hot-cli](https://github.com/mischnic/proton-hot-cli) and add typescript support
+
+## download
+```bash
+npm i -D proton-hot-cli2
+//or
+yarn add -D proton-hot-cli2
+```
+
+## boilerplate
+
+[https://github.com/Grewer/proton-native-boilerplate](https://github.com/Grewer/proton-native-boilerplate)
+
 
 Hot Reloading for [proton-native](https://github.com/kusti8/proton-native).
 
